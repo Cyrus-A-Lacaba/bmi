@@ -1,0 +1,146 @@
+
+body{
+  background-color: #fefbd8;
+}
+
+hr{
+  border:5px dotted darkgray;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 8%;
+  color: gray;
+}
+
+h1{
+  font-family: 'Fredoka One', cursive;
+}
+
+#bmi_legend {
+  position: relative;
+  table-layout: fixed;
+  border: 1px solid lightgray;
+  background-color: #d5f4e6;
+  border-collapse: collapse;
+  margin:5% 0 5% 5%;
+  width: 30vw;
+  filter: drop-shadow(3px 3px 3px darkgray);
+}
+
+#form_tbl {
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin:5%;
+  width: 30vw;
+}
+
+#form_tbl td:nth-child(1), td:nth-child(1) {
+  width: 40%;
+  text-align: left;
+}
+
+#form_tbl td:nth-child(2) {
+  text-align: right;
+}
+
+#bmi_result_tbl{
+  margin: 0 10%;
+  font-weight: bold;
+}
+
+.img_legend{
+  border: 1px solid lightgray;
+  float:right;
+  margin:5% 55% 5% 5%;
+  width: 80px;
+  height: 180px;
+  border-radius: 5%;
+  filter: drop-shadow(3px 3px 3px darkgray);
+}
+
+td{
+  padding:2px;
+  border-width: 1px;
+}
+
+td:nth-child(2) {
+  text-align: center;
+  cursor: pointer;
+}
+
+table .t_heading{
+  text-align: center;
+  color:blue;
+}
+
+form table {
+  background-color: #fefbd8;
+  border:0;
+}
+
+.a >:not(p){
+  color: pink;
+}
+
+.a p:nth-child(2){
+  color: green;
+}
+
+.a:nth-last-child(n-2){
+  color: violet;
+}
+
+.a p:nth-last-of-type(){
+  color:orange;
+}
+
+.a p:nth-of-type(2){
+  color:yellow;
+}
+
+.content p:only-child(){
+  text-decoration: underline;
+}
+.content p:only-of-type(){
+  font-style: italic;
+}
+
+#my_id{
+  padding:30px 0 0 30px;
+  color:#046582;
+  text-shadow: 3px 3px 5px #BBB;
+}
+
+#my_id:target{
+  background-color: green;
+}
+
+body > :not(p), body >:not(div){
+  color: black;
+}
+
+input[type='text']:disabled{
+  background-color: gray;
+  border-style: 1px solid gray;
+}
+
+input[type='button']:enabled{
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  #bmi_legend {
+    width: 60vw;
+  }
+
+  #form_tbl {
+    width: 60vw;
+  }
+
+  .img_legend{
+    float:right;
+    margin:5% 10% 5% 2%;
+    width: 80px;
+    height: 180px;
+  }
+}
