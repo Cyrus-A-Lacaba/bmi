@@ -19,7 +19,8 @@ function getBMI(name, ht, wt) {
   }
 
   document.getElementById("bmi_reading").innerHTML =  "Hi " + name + ", your BMI is " + bmi + " (" + msg.substr(3) + ")";
-  document.getElementById(msg.substr(0,2)).style = "font-weight:bold;"
+  document.getElementsByClassName(msg.substr(0,2))[0].style = "font-weight:bold; background-color:#78c4d4;";
+  document.getElementsByClassName(msg.substr(0,2))[1].style = "font-weight:bold; background-color:#78c4d4;";
   showBMIImg(msg.substr(0,2));
 }
 

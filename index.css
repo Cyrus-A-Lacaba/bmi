@@ -145,7 +145,7 @@ input[type='button']:enabled{
   }
 
   input[type='text'], input[type='number'] {
-    width: 90%;
+    width: 100%;
   }
 
 }
