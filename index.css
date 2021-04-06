@@ -128,9 +128,8 @@ body > :not(p), body >:not(div){
   color: black;
 }
 
-input[type='text']:disabled{
-  background-color: gray;
-  border-style: 1px solid gray;
+input[type='text'],input[type='number']{
+  text-align: right;
 }
 
 input[type='button']:enabled{
@@ -147,7 +146,7 @@ input[type='button']:enabled{
   }
 
   #form_tbl td:nth-child(1), td:nth-child(1) {
-    width: 20vm;    
+    width: 20vm;
   }
 
   #form_tbl td:nth-child(2) {

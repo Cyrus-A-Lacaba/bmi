@@ -2,7 +2,12 @@ function getBMI(name, ht, wt) {
   var bmi = (wt/(ht ** 2));
   var msg;
 
-  if (name.length > 0){name = name.toUpperCase();}
+  if (name.length > 0){
+    name = name.toUpperCase();
+  } else {
+    alert("Kindly Enter your Name.");
+    return;
+  }
 
   if (bmi < 18.5) {
     msg = "UW:UNDERWEIGHT";
