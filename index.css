@@ -31,16 +31,22 @@ h1{
   table-layout: fixed;
   border-collapse: collapse;
   margin:5%;
-  width: 30vw;
+  width: 40vw;
 }
 
 #form_tbl td:nth-child(1), td:nth-child(1) {
-  width: 40%;
+  width: 15vm;
   text-align: left;
 }
 
 #form_tbl td:nth-child(2) {
   text-align: right;
+  width: 15vw;
+}
+
+#form_tbl td:nth-child(3) {
+  text-align: center;
+  font-size: 11px;
 }
 
 #bmi_result_tbl{
@@ -48,6 +54,9 @@ h1{
   font-weight: bold;
 }
 
+#wt{
+
+}
 .img_legend{
   border: 1px solid lightgray;
   float:right;
@@ -134,7 +143,15 @@ input[type='button']:enabled{
   }
 
   #form_tbl {
-    width: 60vw;
+    width: 90vw;
+  }
+
+  #form_tbl td:nth-child(1), td:nth-child(1) {
+    width: 20vm;    
+  }
+
+  #form_tbl td:nth-child(2) {
+    width: 30vw;
   }
 
   .img_legend{
