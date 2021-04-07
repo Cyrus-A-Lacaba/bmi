@@ -1,3 +1,5 @@
+var pElement="";
+
 function getBMI(name, ht, wt) {
   var bmi = (wt/(ht ** 2));
   var msg;
@@ -24,8 +26,15 @@ function getBMI(name, ht, wt) {
   }
 
   document.getElementById("bmi_reading").innerHTML =  "Hi " + name + ", your BMI is " + bmi + " (" + msg.substr(3) + ")";
-  document.getElementsByClassName(msg.substr(0,2))[0].style = "font-weight:bold; background-color:#78c4d4;";
-  document.getElementsByClassName(msg.substr(0,2))[1].style = "font-weight:bold; background-color:#78c4d4;";
+  if (pElement.length>0){
+    document.querySelectorAll("." +  pElement)[0].classList.toggle("highlight");
+    document.querySelectorAll("." +  pElement)[1].classList.toggle("highlight");
+  }
+
+  document.querySelectorAll("." +  msg.substr(0,2))[0].classList.toggle("highlight");
+  document.querySelectorAll("." +  msg.substr(0,2))[1].classList.toggle("highlight");
+  pElement =  msg.substr(0,2);
+
   showBMIImg(msg.substr(0,2));
 }
 

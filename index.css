@@ -9,7 +9,6 @@ hr{
   border-left: 0;
   border-right: 0;
   width: 8%;
-  color: gray;
 }
 
 h1{
@@ -50,13 +49,17 @@ h1{
 }
 
 #bmi_result_tbl{
-  margin: 0 10%;
-  font-weight: bold;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin:5%;
+  width: 40vw;
 }
 
-#wt{
-
+.highlight {
+  font-weight:bold;
+  background-color:#78c4d4;
 }
+
 .img_legend{
   border: 1px solid lightgray;
   float:right;
@@ -141,12 +144,16 @@ input[type='button']:enabled{
     width: 60vw;
   }
 
+  #bmi_result_tbl{
+    width: 90vw;
+  }
+
   #form_tbl {
     width: 90vw;
   }
 
   #form_tbl td:nth-child(1), td:nth-child(1) {
-    width: 20vm;
+    width: 20vw;
   }
 
   #form_tbl td:nth-child(2) {
