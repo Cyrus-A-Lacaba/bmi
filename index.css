@@ -157,7 +157,7 @@ input[type='button']:enabled{
   }
 
   #form_tbl td:nth-child(2) {
-    width: 30vw;
+    width: 40vw;
   }
 
   .img_legend{

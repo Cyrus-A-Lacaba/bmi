@@ -30,11 +30,9 @@ function getBMI(name, ht, wt) {
     document.querySelectorAll("." +  pElement)[0].classList.toggle("highlight");
     document.querySelectorAll("." +  pElement)[1].classList.toggle("highlight");
   }
-
   document.querySelectorAll("." +  msg.substr(0,2))[0].classList.toggle("highlight");
   document.querySelectorAll("." +  msg.substr(0,2))[1].classList.toggle("highlight");
   pElement =  msg.substr(0,2);
-
   showBMIImg(msg.substr(0,2));
 }
 
